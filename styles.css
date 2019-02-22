@@ -12,9 +12,8 @@ header {
 
 /*MENU*/
 .navbar {
-    text-align: right;
     word-spacing: 10px;
-    padding-left: 5px;
+    padding-left: 1000px;
 
 
 }
@@ -24,7 +23,6 @@ header {
     color: white;
     font-size: 2em;
     word-spacing: normal;
-    ß
 }
 
 
@@ -221,6 +219,14 @@ footer .footergrid {
 
     .navbar {
         display: block
+    }
+
+    #splash {
+        width: 100vw;
+        height: 75vh;
+        background-image: url(splash/baggrund-100.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
