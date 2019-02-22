@@ -1,0 +1,227 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(195, 104, 42);
+
+}
+
+header {
+    position: absolute;
+}
+
+/*MENU*/
+.navbar {
+    text-align: right;
+    word-spacing: 10px;
+    padding-left: 5px;
+
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    word-spacing: normal;
+    ß
+}
+
+
+.navbar a:hover {
+    background-color: #9f5e07;
+    cursor: pointer;
+    color: white;
+
+}
+
+/*MENU SLUT*/
+/*BURGERMENU*/
+#menuknap {
+    text-align: left;
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+
+    font-family: 'helvetica', sans-serif;
+}
+
+#menu {
+    transition: transform 0.3s;
+    list-style-type: none;
+    transform-origin: top left;
+
+    text-align: left;
+    padding-bottom: 20px;
+    background-color: rgba(239, 170, 0, 0.9);
+    width: 300px;
+}
+
+#burger {
+    width: 200px;
+    z-index: 2;
+    margin-left: 20px
+}
+
+#menu li {
+    padding-top: 30px;
+    display: block;
+    text-align: left;
+
+
+}
+
+#menu a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.hidden {
+    display: none;
+}
+
+/*BURGERMENU SLUT*/
+
+
+#splash {
+    width: 100vw;
+    height: 75vh;
+    background-image: url(splash/splashiphone-100.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#liste {
+
+    /*
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 10px;
+*/
+
+
+    width: 100vw;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+
+
+}
+
+img {
+    width: 300px;
+    margin: 2vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+p {}
+
+h2 {}
+
+
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding-top: 8px;
+}
+
+.menu {
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #d38548;
+    border: 2px orange solid;
+}
+
+.visteRetter {
+    border-bottom: 3px orange solid;
+
+    margin: 10px;
+    padding: 10px;
+
+    background-color: #d38548;
+
+    color: black;
+
+    width: 400px;
+
+    margin-bottom: 5vw;
+
+    text-align: center;
+
+    font-family: ;
+
+}
+
+#popup {
+
+    width: 100%;
+    height: 60%;
+    position: fixed;
+    display: none;
+    background-color: rgb(229, 191, 64);
+
+}
+
+#indhold {
+    margin: 15px;
+    text-align: center;
+}
+
+button {
+    text-decoration: underline orange;
+}
+
+
+footer {
+    background-color: rgb(195, 104, 42);
+    color: black;
+    width: 100%;
+}
+
+
+footer p,
+footer h2 {
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 0 0 14px 0;
+    padding: 10px
+}
+
+footer .footergrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 10px 0 0 0;
+}
+
+
+/*MEDIA*/
+@media only screen and (min-width: 730px) {
+
+
+    #burger {
+        display: none;
+    }
+
+    .navbar {
+        display: block
+    }
+
+
+}

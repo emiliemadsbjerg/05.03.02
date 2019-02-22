@@ -4,18 +4,87 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Roma</title>
+    <title>Restaurant Italiano</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--
     <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
 
-
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
     </style>
+-->
 </head>
 
 <body>
 
+    <header>
+        <div class="navbar hidden">
+            <a href="index.html">Resturant Italiano</a>
+            <a href="menu.html">Menu</a>
+            <a href="menu.html">Kontakt</a>
+
+        </div>
+
+
+
+        <nav id="burger">
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="menu.html">Menukort</a></li>
+                <li><a href="info.html">Informationer</a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+    </header>
+    <section id=splash>
+    </section>
+
+    <footer>
+        <h2> Find os her:</h2>
+
+        <div class="footergrid">
+
+            <p> Åbningstider: <br>Mandag - Fredag: 10.30-22.00 <br> Lørdag:12.00-23.00</p>
+            <p> Adresse:<br> Grønnegade 97, 1234 København K</p>
+
+
+        </div>
+    </footer>
+
+
 
     <script>
+        document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
+        function toggleMenu() {
+            console.log("Toogle menu");
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap").textContent = "X";
+            }
+        }
     </script>
 </body>
 
