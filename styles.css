@@ -13,9 +13,8 @@ header {
 /*MENU*/
 .navbar {
     word-spacing: 10px;
-    padding-left: 1000px;
-
-
+    padding-left: 1900px;
+    font-size: 1.4rem
 }
 
 .navbar a {
@@ -95,12 +94,6 @@ header {
 
 #liste {
 
-    /*
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    margin: 10px;
-*/
 
 
     width: 100vw;
@@ -170,10 +163,10 @@ h1 {
 #popup {
 
     width: 100%;
-    height: 60%;
+    height: 63%;
     position: fixed;
-    display: none;
     background-color: rgb(229, 191, 64);
+    margin-top: 100px;
 
 }
 
@@ -184,6 +177,31 @@ h1 {
 
 button {
     text-decoration: underline orange;
+}
+
+.filter {
+    background-color: orange;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 7px;
+    border-radius: 10%;
+    font-size: 16px;
+
+
+}
+
+#luk {
+    background-color: orange;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
 }
 
 
@@ -210,7 +228,7 @@ footer .footergrid {
 
 
 /*MEDIA*/
-@media only screen and (min-width: 730px) {
+@media only screen and (min-width: 900px) {
 
 
     #burger {
@@ -229,5 +247,88 @@ footer .footergrid {
         background-size: cover;
     }
 
+    #liste {
 
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+        width: 100vw;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+
+
+
+
+    }
+
+    #popup {
+
+        width: 80%;
+        height: 60%;
+        position: fixed;
+        margin: 156px;
+
+    }
+
+    .filter {
+        background-color: orange;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        border-radius: 10%;
+        font-size: 16px;
+
+
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+
+    .visteRetter {
+        border-bottom: 3px orange solid;
+
+        margin: 10px;
+        padding: 10px;
+
+        background-color: #d38548;
+
+        color: black;
+
+        width: 300px;
+        ;
+
+        margin-bottom: 5vw;
+
+        text-align: center;
+
+    }
+
+    #popup {
+
+        width: 80%;
+        height: 40%;
+        position: fixed;
+        margin: 156px;
+
+    }
+
+    .filter {
+        background-color: orange;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        border-radius: 10%;
+        font-size: 16px;
+
+
+    }
 }
