@@ -1,85 +1,149 @@
 [{
-	"kategori": "ramen",
-	"navn": "CREMET RISOTTO MED SVAMPE OG PORRER",
-	"pris": 120,
-	"billede": "ramen1",
-	"beskrivelse": "Ris, parmesan, olie og sm\u00f8r i rigelige m\u00e6ngder. Risotto er ikke for folk, der er fedtforskr\u00e6kkede."
+		"kategori": "ramen",
+		"navn": "TONKOTSU",
+		"pris": 120,
+		"billede": "ramen1",
+		"beskrivelse": "Pork broth / spring onion / garlic chips / organic pork cha-shu / organic egg."
 }, {
-	"kategori": "hovedretter",
-	"navn": "PIZZA MED LAKS, FENNIKEL OG KARTOFFEL",
-	"pris": 170,
-	"billede": "pizza_med_laks_fennikel_og_kartoffel",
-	"beskrivelse": "Laks som pizzafyld smager rigtig godt, og i kombination med fintsnittet fennikel og spr\u00f8de \u00e6bletern f\u00e5r du en frisk og anderledes pizza."
+		"kategori": "ramen",
+		"navn": "TONKOTSU CHORIZO",
+		"pris": 120,
+		"billede": "ramen2",
+		"beskrivelse": "Pork broth / spring onion / PAPA’s chorizo paste / organic pork cha-shu / garlic chips + organic egg."
 }, {
-	"kategori": "hovedretter",
-	"navn": "ITALIENSKE K\u00d8DBOLLER I TOMATSAUCE",
-	"pris": 170,
-	"billede": "koedboller",
-	"beskrivelse": "Nem og l\u00e6kker aftensmad er altid i h\u00f8j kurs, og denne italienske ret med l\u00e6kre og saftige italienske k\u00f8dboller er et sikkert smagshit."
+		"kategori": "ramen",
+		"navn": "TANTAN",
+		"pris": 120,
+		"billede": "ramen3",
+		"beskrivelse": "Pork broth / spiced chopped pork / spring onion /corn seasonal topping with organic egg.."
 }, {
-	"kategori": "forretter",
-	"navn": "ITALIENSK MADBR\u00d8D",
-	"pris": 100,
-	"billede": "italiensk_madbroed_med_havsalt",
-	"beskrivelse": "Vi har ladet os inspirere af Piemonte-omr\u00e5det, og serverer her et spr\u00f8dt italiensk madbr\u00f8d med tomat, rosmarin og havsalt!"
+		"kategori": "ramen",
+		"navn": "SHOYU",
+		"pris": 120,
+		"billede": "ramen6",
+		"beskrivelse": "Chicken broth / shoyu tare / organic pork cha-shu / spring onion / sprouts / seasonal topping + organic egg."
+},
+
+
+	{
+		"kategori": "ramen",
+		"navn": "KIMUCHI",
+		"pris": 120,
+		"billede": "ramen4",
+		"beskrivelse": "Chicken broth / kimchi tare / organic pork cha-shu / spring onion /sprouts / bak choy + organic egg."
 }, {
-	"kategori": "hovedretter",
-	"navn": "CANNELLONI MED RICOTTAOST OG SVAMPE",
-	"pris": 170,
-	"billede": "italienske-retter-canneloni",
-	"beskrivelse": "Fyldte cannelloni er italiensk, n\u00e5r det er bedst. Her har vi fyldt dem med svampe og ricottaost."
+		"kategori": "ramen",
+		"navn": "VEGETAR",
+		"pris": 120,
+		"billede": "ramen5",
+		"beskrivelse": "Organic shiitake broth / miso tare / pickled shiitake / spring onion /seasonal topping + organic egg."
+},
+
+
+	{
+		"kategori": "sideorders",
+		"navn": "PORK GYOZA",
+		"pris": 45,
+		"billede": "gyozasvin",
+		"beskrivelse": "Pork / spring onion / ginger."
 }, {
-	"kategori": "forretter",
-	"navn": "CROSTINI MED JORDB\u00c6R OG OST",
-	"pris": 100,
-	"billede": "samvirke_jordbaer_crostini",
-	"beskrivelse": "B\u00e5de s\u00f8de og salte. Disse dejlige crostini med jordb\u00e6r og ost fungerer perfekt som hapsere til mousserende vin eller \u00f8l."
+		"kategori": "sideorders",
+		"navn": "CHICKEN GYOZA",
+		"pris": 45,
+		"billede": "gyozaokse",
+		"beskrivelse": "Chicken / spring onion / ginger."
 }, {
-	"kategori": "hovedretter",
-	"navn": "HJEMMELAVET GNOCCHI MED URTESM\u00d8R",
-	"pris": 170,
-	"billede": "gnocchi",
-	"beskrivelse": "Denne alternative og smagfulde \u201dpasta\u201d er lavet fra bunden og p\u00e5 basis af kartofler. Server dem gerne som tilbeh\u00f8r, og steg eventuelle rester gyldne og spr\u00f8de dagen derp\u00e5, s\u00e5 bliver de ekstra l\u00e6kre."
+		"kategori": "sideorders",
+		"navn": "WONTON",
+		"pris": 45,
+		"billede": "sideorder1",
+		"beskrivelse": "5pcs. Tiger shrimp, pork, spring onion."
 }, {
-	"kategori": "forretter",
-	"navn": "CARPACCIO AF R\u00d8GET SVINEM\u00d8RBRAD",
-	"pris": 100,
-	"billede": "carpaccio",
-	"beskrivelse": "Carpaccio er en klassisk italiensk forret. Her er den lavet med r\u00f8get svinem\u00f8rbrad i stedet for r\u00e5 okse- eller kalvefilet."
+		"kategori": "sideorders",
+		"navn": "GOMA KAAR-AGE",
+		"pris": 45,
+		"billede": "sideorder2",
+		"beskrivelse": "Japanese chicken nuggets with lemon & goma mayo."
 }, {
-	"kategori": "forretter",
-	"navn": "BRUSCHETTAS",
-	"pris": 100,
-	"billede": "bruschetta",
-	"beskrivelse": "Italienske bruschettas kan varieres i det uendelige. Men denne klassiker, kreeret med friske, hakkede tomater, hvidl\u00f8g og basilikum g\u00e5r aldrig af mode. Saftige, solmodne tomater g\u00e5r nemlig fantastisk til det spr\u00f8de br\u00f8d."
+		"kategori": "sideorders",
+		"navn": "VEGGIE SPRINGROLLS",
+		"pris": 40,
+		"billede": "ruller",
+		"beskrivelse": "5 pcs. Chinese cabbage/ spring onion/ carrot."
 }, {
-	"kategori": "desserter",
-	"navn": "KLASSISK TIRAMISU",
-	"pris": 80,
-	"billede": "tiramisu",
-	"beskrivelse": "Tiramisu er en klassisk italiensk dessert, som med sin bl\u00f8de mascarponecreme og smag af kaffe og ren kakao er den perfekte afslutning p\u00e5 en god middag"
+		"kategori": "sideorders",
+		"navn": "EDAMAME",
+		"pris": 35,
+		"billede": "edamame",
+		"beskrivelse": "Edamame/ salt/ lemon."
 }, {
-	"kategori": "desserter",
-	"navn": "TRIFLI MED BL\u00c5B\u00c6R OG LIMONCELLO",
-	"pris": 80,
-	"billede": "trifli",
-	"beskrivelse": "Denne trifli er en fr\u00e6k fortolkning af den klassiske italienske dessert Zuppa Inglese"
+		"kategori": "sideorders",
+		"navn": "PORK GUA BAO",
+		"pris": 50,
+		"billede": "bob1",
+		"beskrivelse": "Steamed bun / pork / cucumber / coriander / spring onion / hoisin / nuts."
 }, {
-	"kategori": "desserter",
-	"navn": "PANFORTE MED HASSELN\u00d8DDER, VALN\u00d8DDER OG MANDLER",
-	"pris": 80,
-	"billede": "panforte",
-	"beskrivelse": "Panforte er en kompakt kage med intens smag. Spis den som konfekt i sm\u00e5 stykker."
+		"kategori": "sideorders",
+		"navn": "BEEF GUA BAO",
+		"pris": 50,
+		"billede": "bob2",
+		"beskrivelse": "Steamed bun / beef / cucumber / coriander / spring onion / hoisin / nuts."
+},
+	{
+		"kategori": "sideorders",
+		"navn": "SPICY CUCUMBER SALAD",
+		"pris": 50,
+		"billede": "sideorder3",
+		"beskrivelse": "Spicy cucumber/ koriander / peanuts / spicy vinaigrette."
+},
+	{
+		"kategori": "extras",
+		"navn": "ORGANIC EGG",
+		"pris": 10,
+		"billede": "ramenegg",
+		"beskrivelse": "Organic egg for your ramen"
+},
+	{
+		"kategori": "extras",
+		"navn": "KAEDAMA",
+		"pris": 25,
+		"billede": "kaedama",
+		"beskrivelse": "Extra portion of noodles"
 }, {
-	"kategori": "desserter",
-	"navn": "PANNA COTTA MED B\u00c6R I VIN OG HONNING",
-	"pris": 80,
-	"billede": "panna-cotta",
-	"beskrivelse": "Endnu en udgave af den italienske klassiker inden for desserter: panna cotta. Her serveret med b\u00e6r i vin og honning"
-}, {
-	"kategori": "drikkevarer",
-	"navn": "",
-	"pris": "",
-	"billede": "",
-	"beskrivelse": ""
+		"kategori": "extras",
+		"navn": "CHA SHU",
+		"pris": 15,
+		"billede": "chashu",
+		"beskrivelse": "Extra slices of pork belly for your ramen"
+},
+
+
+
+	{
+		"kategori": "drikkevarer",
+		"navn": "COCA COLA",
+		"pris": "20",
+		"billede": "cola",
+		"beskrivelse": "Enjoy ice cold"
+},
+	{
+		"kategori": "drikkevarer",
+		"navn": "COCA COLA ZERO",
+		"pris": "20",
+		"billede": "colazero",
+		"beskrivelse": "Enjoy ice cold"
+},
+	{
+		"kategori": "drikkevarer",
+		"navn": "KIRIN ICHIBAN",
+		"pris": "35",
+		"billede": "kirinichiban",
+		"beskrivelse": "Enjoy ice cold"
+},
+	{
+		"kategori": "drikkevarer",
+		"navn": "ASAHI BEER",
+		"pris": "35",
+		"billede": "asahi",
+		"beskrivelse": "Enjoy ice cold"
 }]
