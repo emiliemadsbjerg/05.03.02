@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<title>Sakura Ramen</title>
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+	<header>
+		<div class="navbar hidden">
+			<ul>
+				<li><a href="index.html">Forside</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="om_og_kontakt.html">Om Sakura Ramen</a></li>
+				<li><a href="om_og_kontakt.html">Kontakt</a></li>
+			</ul>
+		</div>
+
+
+
+		<nav id="burger">
+			<div id="menuknap">☰</div>
+			<ul id="menu" class="hidden">
+				<li><a href="index.html">Forside</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="om_og_kontakt.html">Om Sakura Ramen</a></li>
+				<li><a href="om_og_kontakt.html">Kontakt</a></li>
+			</ul>
+		</nav>
+
+
+
+
+
+	</header>
+	<section id=splash>
+		<a href="index.html"> <img src="imgs/ramenlogo-02.png"> </a>
+		<p class="navn">Sakura Ramen</p>
+	</section>
+
+	<div>
+		<img src="imgs/lokation.png" alt="maps" class="lokation">
+	</div>
+
+
+	<div class="kontakt">
+		<h2> Find os her:</h2>
+
+		<div>
+			<p>For bestilling af bord eller take-away: <br> Ring til os på 22 82 39 90</p> <br>
+			<p> Åbningstider: <br>Mandag - Fredag: 10.30-22.00 <br> Lørdag:12.00-23.00</p> <br>
+			<p> Adresse:<br> Grønnegade 97, 1234 København K</p>
+			<br>
+
+		</div>
+
+	</div>
+
+
+	<script>
+		document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+		function toggleMenu() {
+			console.log("Toogle menu");
+			document.querySelector("#menu").classList.toggle("hidden");
+
+			let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+
+			if (erSkjult == true) {
+				document.querySelector("#menuknap").textContent = "☰";
+			} else {
+				document.querySelector("#menuknap").textContent = "X";
+			}
+		}
+	</script>
+</body>
+
+</html>

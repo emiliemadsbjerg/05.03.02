@@ -120,28 +120,28 @@
 
 
 	{
-		"kategori": "drikkevarer",
+		"kategori": "drikkevare",
 		"navn": "COCA COLA",
 		"pris": "20",
 		"billede": "cola",
 		"beskrivelse": "Enjoy ice cold"
 },
 	{
-		"kategori": "drikkevarer",
+		"kategori": "drikkevare",
 		"navn": "COCA COLA ZERO",
 		"pris": "20",
 		"billede": "colazero",
 		"beskrivelse": "Enjoy ice cold"
 },
 	{
-		"kategori": "drikkevarer",
+		"kategori": "drikkevare",
 		"navn": "KIRIN ICHIBAN",
 		"pris": "35",
 		"billede": "kirinichiban",
 		"beskrivelse": "Enjoy ice cold"
 },
 	{
-		"kategori": "drikkevarer",
+		"kategori": "drikkevare",
 		"navn": "ASAHI BEER",
 		"pris": "35",
 		"billede": "asahi",

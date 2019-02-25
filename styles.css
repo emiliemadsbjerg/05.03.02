@@ -94,6 +94,25 @@ li a:hover {
 }
 
 /*BURGERMENU SLUT*/
+.forside {
+	font-family: 'Comfortaa', cursive;
+	margin: 20px;
+	text-align: center;
+
+}
+
+.forsidebillede {
+	height: 80%;
+	width: 60%;
+
+
+}
+
+.forsidetekst {
+	width: ;
+}
+
+
 
 
 #splash {
@@ -182,17 +201,18 @@ h1 {
 }
 
 #popup {
-
-	width: 100%;
-	height: 63%;
+	width: 90%;
+	height: auto;
 	position: fixed;
-	background-color: rgb(229, 191, 64);
-	margin-top: 100px;
+	background-color: rgba(219, 199, 162, 0.87);
+	margin: 20px;
+	font-family: 'Comfortaa', cursive;
+
 
 }
 
 #indhold {
-	margin: 15px;
+	padding: 5px;
 	text-align: center;
 }
 
@@ -216,33 +236,35 @@ h1 {
 }
 
 #luk {
-	background-color: white;
-	/* Green */
+	background-color: rgb(42, 42, 42);
 	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
+	color: #ffffff;
 	display: inline-block;
-	font-size: 16px;
-	width: 100%;
+	margin: 10px;
+	border-radius: 100px;
+	text-align: left;
+	text-decoration: none;
+	font-size: 17px;
+
+
 }
 
 
 footer {
-	/*background-color: rgb(255, 255, 255);*/
+	clear: both;
 	background-image: url(imgs/paperbackground.png);
 	background-size: cover;
 	color: black;
 	width: 100%;
 	font-family: 'Comfortaa', cursive;
+
 }
 
 
 footer p,
 footer h2 {
 	margin: 0 0 14px 0;
-	padding: 10px
+	padding: 20px
 }
 
 footer .footergrid {
@@ -272,6 +294,13 @@ footer .footergrid {
 
 	}
 
+	.forsidetekst {
+		width: 60%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	#liste {
 
 
@@ -295,9 +324,10 @@ footer .footergrid {
 	#popup {
 
 		width: 80%;
-		height: 60%;
+		height: 50%;
 		position: fixed;
 		margin: 156px;
+
 
 	}
 
@@ -316,6 +346,13 @@ footer .footergrid {
 }
 
 @media only screen and (min-width: 700px) {
+
+	.forsidetekst {
+		width: 60%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	.visteRetter {
 		border: 1px black solid;
@@ -339,7 +376,7 @@ footer .footergrid {
 	#popup {
 
 		width: 80%;
-		height: 40%;
+		height: 60%;
 		position: fixed;
 		margin: 156px;
 
@@ -356,4 +393,20 @@ footer .footergrid {
 
 
 	}
+}
+
+.kontakt {
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	border: 1px black solid;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	background-color: rgba(221, 185, 158, 0.64);
+}
+
+.lokation {
+	height: 100%;
+	width: 90%;
 }
