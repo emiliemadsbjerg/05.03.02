@@ -2,7 +2,9 @@ body,
 html {
 	margin: 0;
 	padding: 0;
-	background-color: white;
+	background-image: url(imgs/paper.jpg);
+	background-size: contain;
+
 
 }
 
@@ -121,10 +123,18 @@ li a:hover {
 	font-size: 20px;
 	padding: 10px;
 
+
+}
+
+.logo {
+	height: auto;
+	width: 170px;
 }
 
 .navn {
-	padding: 10px 50px 10px 15px
+	padding: 10px 50px 10px 15px;
+	font-family: lemonMilk;
+	font-size: 2rem;
 }
 
 
@@ -174,17 +184,17 @@ h1 {
 .menu {
 	text-align: center;
 	padding: 10px 10px;
-	background-color: white;
-	border: 2px #e6cc9d solid;
+	background-color: rgb(255, 255, 255);
+	border: 2px #c42424 solid;
 }
 
 .visteRetter {
-	border-bottom: 3px #e6cc9d solid;
+	border: 1px black solid;
 
-	margin: 10px;
+	margin: 20px;
 	padding: 10px;
 
-	background-color: white;
+	background-color: #ffffff;
 
 	color: black;
 
@@ -202,11 +212,12 @@ h1 {
 
 #popup {
 	width: 90%;
-	height: auto;
+	height: 80%;
 	position: fixed;
-	background-color: rgba(219, 199, 162, 0.87);
-	margin: 20px;
+	background-color: rgba(20, 19, 19, 0.87);
+	margin-left: 20px;
 	font-family: 'Comfortaa', cursive;
+
 
 
 }
@@ -236,7 +247,7 @@ h1 {
 }
 
 #luk {
-	background-color: rgb(42, 42, 42);
+	background-color: rgb(175, 38, 38);
 	border: none;
 	color: #ffffff;
 	display: inline-block;
@@ -247,14 +258,14 @@ h1 {
 	font-size: 17px;
 
 
+
 }
 
 
 footer {
 	clear: both;
-	background-image: url(imgs/paperbackground.png);
-	background-size: cover;
-	color: black;
+	background-color: rgba(0, 0, 0, 0.68);
+	color: #ffffff;
 	width: 100%;
 	font-family: 'Comfortaa', cursive;
 
@@ -289,7 +300,7 @@ footer .footergrid {
 
 	#splash {
 		width: 100vw;
-		height: 75vh;
+		height: auto;
 
 
 	}
@@ -326,14 +337,12 @@ footer .footergrid {
 		width: 80%;
 		height: 50%;
 		position: fixed;
-		margin: 156px;
 
 
 	}
 
 	.filter {
 		background-color: red;
-		/* Green */
 		border: none;
 		color: black;
 		padding: 20px;
@@ -357,7 +366,7 @@ footer .footergrid {
 	.visteRetter {
 		border: 1px black solid;
 
-		margin: 10px;
+		margin: 30px;
 		padding: 10px;
 
 		background-color: #ffffff;
@@ -376,15 +385,14 @@ footer .footergrid {
 	#popup {
 
 		width: 80%;
-		height: 60%;
+		height: 80%;
 		position: fixed;
-		margin: 156px;
+		margin-left: 100px;
 
 	}
 
 	.filter {
 		background-color: white;
-		/* Green */
 		border: none;
 		color: black;
 		padding: 20px;
