@@ -2,165 +2,167 @@
 <html lang="da">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Italiano</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+	<title>Sakura Ramen</title>
+
+	<link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="navbar hidden">
-            <a href="index.html">Resturant Italiano</a>
-            <a href="menu.html">Menu</a>
-
-        </div>
-
-
-
-        <nav id="burger">
-            <div id="menuknap">☰</div>
-            <ul id="menu" class="hidden">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="menu.html">Menukort</a></li>
-
-
-            </ul>
-        </nav>
+	<header>
+		<div class="navbar hidden">
+			<ul>
+				<li><a href="index.html">Forside</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="om_og_kontakt.html">Om Sakura Ramen</a></li>
+				<li><a href="om_og_kontakt.html">Kontakt</a></li>
+			</ul>
+		</div>
 
 
 
-
-
-    </header>
-
-
-    <div id="popup">
-        <div id="indhold"></div>
-        <button id="luk">X</button>
-    </div>
-
-    <h1>Menu</h1>
-
-    <nav class="menu">
-        <button class="filter valgt" data-ret="alle">Menu</button>
-        <button class="filter" data-ret="forretter">Forretter</button>
-        <button class="filter" data-ret="hovedretter">Hovedretter</button>
-        <button class="filter" data-ret="desserter">Dessertter</button>
-        <button class="filter" data-ret="drikkevarer">Drikkevarer</button>
-        <button class="filter" data-ret="sideorders">Sideorders</button>
-    </nav>
-
-    <div id="liste"></div>
+		<nav id="burger">
+			<div id="menuknap">☰</div>
+			<ul id="menu" class="hidden">
+				<li><a href="index.html">Forside</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="om_og_kontakt.html">Om Sakura Ramen</a></li>
+				<li><a href="om_og_kontakt.html">Kontakt</a></li>
+			</ul>
+		</nav>
 
 
 
 
-    <footer>
-        <h2> Find os her:</h2>
 
-        <div class="footergrid">
-
-            <p> Åbningstider: <br>Mandag - Fredag: 10.30-22.00 <br> Lørdag:12.00-23.00</p>
-            <p> Adresse:<br> Grønnegade 97, 1234 København K</p>
+	</header>
 
 
-        </div>
-    </footer>
+	<div id="popup">
+		<div id="indhold"></div>
+		<button id="luk">X</button>
+	</div>
 
-    <script>
-        let retter = [];
-        let dest = document.querySelector("#liste");
-        let filter = "alle";
+	<h1>Menu</h1>
+
+	<nav class="menu">
+		<button class="filter" data-ret="sideorders">Sideorders</button>
+		<button class="filter" data-ret="ramen">Ramen</button>
+		<button class="filter" data-ret="extras">Extras</button>
+		<button class="filter" data-ret="drikkevare">Drikkevare</button>
+	</nav>
+
+	<div id="liste"></div>
 
 
-        document.addEventListener("DOMContentLoaded", sidenVises);
 
-        function sidenVises() {
 
-            async function getJson() {
-                console.log("JSON hentes");
-                let jsonData = await fetch("retter.json");
-                retter = await jsonData.json();
-                retter.sort((a, b) => {
-                    return b.kategori.localeCompare(a.kategori);
-                })
+	<footer>
+		<h2> Find os her:</h2>
 
-                visRetter();
-            }
+		<div class="footergrid">
 
-            function visRetter() {
-                dest.innerHTML = "";
-                retter.forEach(ret => {
-                    if (filter == "alle" || filter == ret.kategori) {
-                        let template = `
+			<p> Åbningstider: <br>Mandag - Fredag: 10.30-22.00 <br> Lørdag:12.00-23.00</p>
+			<p> Adresse:<br> Grønnegade 97, 1234 København K</p>
+
+
+		</div>
+	</footer>
+
+	<script>
+		let retter = [];
+		let dest = document.querySelector("#liste");
+		let filter = "alle";
+
+
+		document.addEventListener("DOMContentLoaded", sidenVises);
+
+		function sidenVises() {
+
+			async function getJson() {
+				console.log("JSON hentes");
+				let jsonData = await fetch("retter.json");
+				retter = await jsonData.json();
+				retter.sort((a, b) => {
+					return b.kategori.localeCompare(a.kategori);
+				})
+
+				visRetter();
+			}
+
+			function visRetter() {
+				dest.innerHTML = "";
+				retter.forEach(ret => {
+					if (filter == "alle" || filter == ret.kategori) {
+						let template = `
                     <div class="visteRetter">
                            <h2>${ret.navn}</h2>
                             <div> <img src="imgs/${ret.billede}.jpg"> </div>
                             <p>Pris: ${ret.pris}</p>
                     </div>`;
 
-                        dest.insertAdjacentHTML("beforeend", template);
-                        dest.lastElementChild.addEventListener("click", open);
+						dest.insertAdjacentHTML("beforeend", template);
+						dest.lastElementChild.addEventListener("click", open);
 
-                        function open() {
-                            document.querySelector("#indhold").innerHTML =
-                                `<h2>${ret.navn}</h2>
+						function open() {
+							document.querySelector("#indhold").innerHTML =
+								`<h2>${ret.navn}</h2>
                             <p>Oprindelse: ${ret.beskrivelse}</p>
                             <div> <img src="imgs/${ret.billede}.jpg"> </div>
                             <p>Pris: ${ret.pris}</p>`;
 
-                            document.querySelector("#popup").style.display = "block";
-                        }
-                    };
-                })
-            }
+							document.querySelector("#popup").style.display = "block";
+						}
+					};
+				})
+			}
 
-            document.querySelectorAll(".filter").forEach(elm => {
-                elm.addEventListener("click", filtrering);
-            })
+			document.querySelectorAll(".filter").forEach(elm => {
+				elm.addEventListener("click", filtrering);
+			})
 
-            document.querySelector("#luk").addEventListener("click", () => {
-                document.querySelector("#popup").style.display = "none";
-            })
+			document.querySelector("#luk").addEventListener("click", () => {
+				document.querySelector("#popup").style.display = "none";
+			})
 
-            function filtrering() {
-                filter = this.getAttribute("data-ret");
-                document.querySelector("h1").textContent = this.textContent;
+			function filtrering() {
+				filter = this.getAttribute("data-ret");
+				document.querySelector("h1").textContent = this.textContent;
 
-                document.querySelectorAll(".filter").forEach(elm => {
-                    elm.classList.remove("valgt");
-                })
-                this.classList.add("valgt");
+				document.querySelectorAll(".filter").forEach(elm => {
+					elm.classList.remove("valgt");
+				})
+				this.classList.add("valgt");
 
-                visRetter();
-            }
-
-
-            getJson();
-            console.log("json");
+				visRetter();
+			}
 
 
-        }
-        document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-
-        function toggleMenu() {
-            console.log("Toogle menu");
-            document.querySelector("#menu").classList.toggle("hidden");
-
-            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+			getJson();
+			console.log("json");
 
 
-            if (erSkjult == true) {
-                document.querySelector("#menuknap").textContent = "☰";
-            } else {
-                document.querySelector("#menuknap").textContent = "X";
-            }
-        }
+		}
+		document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
-    </script>
+		function toggleMenu() {
+			console.log("Toogle menu");
+			document.querySelector("#menu").classList.toggle("hidden");
+
+			let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+
+			if (erSkjult == true) {
+				document.querySelector("#menuknap").textContent = "☰";
+			} else {
+				document.querySelector("#menuknap").textContent = "X";
+			}
+		}
+	</script>
 </body>
 
 </html>

@@ -2,11 +2,12 @@
 <html lang="da">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Italiano</title>
-    <link rel="stylesheet" href="styles.css">
-    <!--
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<title>Sakura Ramen</title>
+	<link rel="stylesheet" href="styles.css">
+	<!--
     <style>
         ul {
             list-style-type: none;
@@ -28,62 +29,69 @@
 
 <body>
 
-    <header>
-        <div class="navbar hidden">
-            <a href="index.html">Resturant Italiano</a>
-            <a href="menu.html">Menu</a>
-
-        </div>
-
-
-
-        <nav id="burger">
-            <div id="menuknap">☰</div>
-            <ul id="menu" class="hidden">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="menu.html">Menukort</a></li>
-            </ul>
-        </nav>
+	<header>
+		<div class="navbar hidden">
+			<ul>
+				<li><a href="index.html">Forside</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="om_og_kontakt.html">Om Sakura Ramen</a></li>
+				<li><a href="om_og_kontakt.html">Kontakt</a></li>
+			</ul>
+		</div>
 
 
 
-
-
-    </header>
-    <section id=splash>
-    </section>
-
-    <footer>
-        <h2> Find os her:</h2>
-
-        <div class="footergrid">
-
-            <p> Åbningstider: <br>Mandag - Fredag: 10.30-22.00 <br> Lørdag:12.00-23.00</p>
-            <p> Adresse:<br> Grønnegade 97, 1234 København K</p>
-
-
-        </div>
-    </footer>
+		<nav id="burger">
+			<div id="menuknap">☰</div>
+			<ul id="menu" class="hidden">
+				<li><a href="index.html">Forside</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="om_og_kontakt.html">Om Sakura Ramen</a></li>
+				<li><a href="om_og_kontakt.html">Kontakt</a></li>
+			</ul>
+		</nav>
 
 
 
-    <script>
-        document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-
-        function toggleMenu() {
-            console.log("Toogle menu");
-            document.querySelector("#menu").classList.toggle("hidden");
-
-            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
 
 
-            if (erSkjult == true) {
-                document.querySelector("#menuknap").textContent = "☰";
-            } else {
-                document.querySelector("#menuknap").textContent = "X";
-            }
-        }
-    </script>
+	</header>
+	<section id=splash>
+		<img src="imgs/ramenlogo-02.png" alt="logo">
+		<p class="navn">Sakura Ramen</p>
+	</section>
+
+	<footer>
+		<h2> Find os her:</h2>
+
+		<div class="footergrid">
+
+			<p> Åbningstider: <br>Mandag - Fredag: 10.30-22.00 <br> Lørdag:12.00-23.00</p>
+			<p> Adresse:<br> Grønnegade 97, 1234 København K</p>
+
+
+		</div>
+	</footer>
+
+
+
+	<script>
+		document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+		function toggleMenu() {
+			console.log("Toogle menu");
+			document.querySelector("#menu").classList.toggle("hidden");
+
+			let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+
+			if (erSkjult == true) {
+				document.querySelector("#menuknap").textContent = "☰";
+			} else {
+				document.querySelector("#menuknap").textContent = "X";
+			}
+		}
+	</script>
 </body>
 
 </html>
